@@ -1,0 +1,375 @@
+2018-01-30 11:47:39 [220.165.208.127][11][-][error][Exception] Exception: [ORDERPAID]该订单已支付 in /data/wwwroot/ddwen.yunpusher.com/common/components/WxJsPay.php:51
+Stack trace:
+#0 /data/wwwroot/ddwen.yunpusher.com/api/modules/v1/controllers/VipController.php(39): common\components\WxJsPay->getPrepayId('owTbmv8TOAphSj9...', 'VIP\xE4\xBC\x9A\xE5\x91\x98\xE8\xB4\xAD\xE4\xB9\xB0', 'v', 490570627702463011, 1)
+#1 [internal function]: api\modules\v1\controllers\VipController->actionBuy()
+#2 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('buy', Array)
+#5 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/vip/buy', Array)
+#6 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /data/wwwroot/ddwen.yunpusher.com/web/api/index.php(16): yii\base\Application->run()
+#8 {main}
+2018-01-30 11:47:39 [220.165.208.127][11][-][info][application] $_POST = [
+    'id' => '1'
+    'access_token' => 'TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u'
+]
+
+$_COOKIE = [
+    'key' => 'TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u'
+    '_csrf-frontend' => 'e08373a03171bf4669eef67b5cc13c965c6bcf69ea19a4d6a59a867887a23f55a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"R702SHP1DPp83PKW7M8r6hiEuweGEinL\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_STATUS' => '200'
+    'HTTPS' => 'on'
+    'HTTP_REFERER' => 'https://ddwen.yunpusher.com/wap/vip.html'
+    'HTTP_COOKIE' => 'key=TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u; _csrf-frontend=e08373a03171bf4669eef67b5cc13c965c6bcf69ea19a4d6a59a867887a23f55a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22R702SHP1DPp83PKW7M8r6hiEuweGEinL%22%3B%7D'
+    'HTTP_HOST' => 'ddwen.yunpusher.com'
+    'HTTP_X_REAL_IP' => '220.165.208.127'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '50'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'https://ddwen.yunpusher.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 5.1.1; NX510J Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043808 Mobile Safari/537.36 MicroMessenger/6.6.1.1200(0x26060132) NetType/WIFI Language/zh_CN'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,en-US;q=0.8'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'ddwen.yunpusher.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '220.165.208.127'
+    'DOCUMENT_ROOT' => '/data/wwwroot/ddwen.yunpusher.com/web'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/data/wwwroot/ddwen.yunpusher.com/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => '/data/wwwroot/ddwen.yunpusher.com/web/api/index.php'
+    'REMOTE_PORT' => '10219'
+    'REDIRECT_URL' => '/api/v1/vip/buy'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/v1/vip/buy'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1517284059.22
+    'REQUEST_TIME' => 1517284059
+]
+2018-01-30 11:47:44 [220.165.208.127][11][-][error][Exception] Exception: [ORDERPAID]该订单已支付 in /data/wwwroot/ddwen.yunpusher.com/common/components/WxJsPay.php:51
+Stack trace:
+#0 /data/wwwroot/ddwen.yunpusher.com/api/modules/v1/controllers/VipController.php(39): common\components\WxJsPay->getPrepayId('owTbmv8TOAphSj9...', 'VIP\xE4\xBC\x9A\xE5\x91\x98\xE8\xB4\xAD\xE4\xB9\xB0', 'v', 490570627702463011, 1)
+#1 [internal function]: api\modules\v1\controllers\VipController->actionBuy()
+#2 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('buy', Array)
+#5 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/vip/buy', Array)
+#6 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /data/wwwroot/ddwen.yunpusher.com/web/api/index.php(16): yii\base\Application->run()
+#8 {main}
+2018-01-30 11:47:44 [220.165.208.127][11][-][info][application] $_POST = [
+    'id' => '1'
+    'access_token' => 'TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u'
+]
+
+$_COOKIE = [
+    'key' => 'TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u'
+    '_csrf-frontend' => 'e08373a03171bf4669eef67b5cc13c965c6bcf69ea19a4d6a59a867887a23f55a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"R702SHP1DPp83PKW7M8r6hiEuweGEinL\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_STATUS' => '200'
+    'HTTPS' => 'on'
+    'HTTP_REFERER' => 'https://ddwen.yunpusher.com/wap/vip.html'
+    'HTTP_COOKIE' => 'key=TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u; _csrf-frontend=e08373a03171bf4669eef67b5cc13c965c6bcf69ea19a4d6a59a867887a23f55a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22R702SHP1DPp83PKW7M8r6hiEuweGEinL%22%3B%7D'
+    'HTTP_HOST' => 'ddwen.yunpusher.com'
+    'HTTP_X_REAL_IP' => '220.165.208.127'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '50'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'https://ddwen.yunpusher.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 5.1.1; NX510J Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043808 Mobile Safari/537.36 MicroMessenger/6.6.1.1200(0x26060132) NetType/WIFI Language/zh_CN'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,en-US;q=0.8'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'ddwen.yunpusher.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '220.165.208.127'
+    'DOCUMENT_ROOT' => '/data/wwwroot/ddwen.yunpusher.com/web'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/data/wwwroot/ddwen.yunpusher.com/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => '/data/wwwroot/ddwen.yunpusher.com/web/api/index.php'
+    'REMOTE_PORT' => '10222'
+    'REDIRECT_URL' => '/api/v1/vip/buy'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/v1/vip/buy'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1517284064.211
+    'REQUEST_TIME' => 1517284064
+]
+2018-01-30 11:47:45 [220.165.208.127][11][-][error][Exception] Exception: [ORDERPAID]该订单已支付 in /data/wwwroot/ddwen.yunpusher.com/common/components/WxJsPay.php:51
+Stack trace:
+#0 /data/wwwroot/ddwen.yunpusher.com/api/modules/v1/controllers/VipController.php(39): common\components\WxJsPay->getPrepayId('owTbmv8TOAphSj9...', 'VIP\xE4\xBC\x9A\xE5\x91\x98\xE8\xB4\xAD\xE4\xB9\xB0', 'v', 490570627702463011, 1)
+#1 [internal function]: api\modules\v1\controllers\VipController->actionBuy()
+#2 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('buy', Array)
+#5 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/vip/buy', Array)
+#6 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /data/wwwroot/ddwen.yunpusher.com/web/api/index.php(16): yii\base\Application->run()
+#8 {main}
+2018-01-30 11:47:45 [220.165.208.127][11][-][info][application] $_POST = [
+    'id' => '1'
+    'access_token' => 'TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u'
+]
+
+$_COOKIE = [
+    'key' => 'TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u'
+    '_csrf-frontend' => 'e08373a03171bf4669eef67b5cc13c965c6bcf69ea19a4d6a59a867887a23f55a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"R702SHP1DPp83PKW7M8r6hiEuweGEinL\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_STATUS' => '200'
+    'HTTPS' => 'on'
+    'HTTP_REFERER' => 'https://ddwen.yunpusher.com/wap/vip.html'
+    'HTTP_COOKIE' => 'key=TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u; _csrf-frontend=e08373a03171bf4669eef67b5cc13c965c6bcf69ea19a4d6a59a867887a23f55a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22R702SHP1DPp83PKW7M8r6hiEuweGEinL%22%3B%7D'
+    'HTTP_HOST' => 'ddwen.yunpusher.com'
+    'HTTP_X_REAL_IP' => '220.165.208.127'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '50'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'https://ddwen.yunpusher.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 5.1.1; NX510J Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043808 Mobile Safari/537.36 MicroMessenger/6.6.1.1200(0x26060132) NetType/WIFI Language/zh_CN'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,en-US;q=0.8'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'ddwen.yunpusher.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '220.165.208.127'
+    'DOCUMENT_ROOT' => '/data/wwwroot/ddwen.yunpusher.com/web'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/data/wwwroot/ddwen.yunpusher.com/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => '/data/wwwroot/ddwen.yunpusher.com/web/api/index.php'
+    'REMOTE_PORT' => '10224'
+    'REDIRECT_URL' => '/api/v1/vip/buy'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/v1/vip/buy'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1517284065.299
+    'REQUEST_TIME' => 1517284065
+]
+2018-01-30 11:47:46 [220.165.208.127][11][-][error][Exception] Exception: [ORDERPAID]该订单已支付 in /data/wwwroot/ddwen.yunpusher.com/common/components/WxJsPay.php:51
+Stack trace:
+#0 /data/wwwroot/ddwen.yunpusher.com/api/modules/v1/controllers/VipController.php(39): common\components\WxJsPay->getPrepayId('owTbmv8TOAphSj9...', 'VIP\xE4\xBC\x9A\xE5\x91\x98\xE8\xB4\xAD\xE4\xB9\xB0', 'v', 490570627702463011, 1)
+#1 [internal function]: api\modules\v1\controllers\VipController->actionBuy()
+#2 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('buy', Array)
+#5 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/vip/buy', Array)
+#6 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /data/wwwroot/ddwen.yunpusher.com/web/api/index.php(16): yii\base\Application->run()
+#8 {main}
+2018-01-30 11:47:45 [220.165.208.127][11][-][info][application] $_POST = [
+    'id' => '1'
+    'access_token' => 'TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u'
+]
+
+$_COOKIE = [
+    'key' => 'TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u'
+    '_csrf-frontend' => 'e08373a03171bf4669eef67b5cc13c965c6bcf69ea19a4d6a59a867887a23f55a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"R702SHP1DPp83PKW7M8r6hiEuweGEinL\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_STATUS' => '200'
+    'HTTPS' => 'on'
+    'HTTP_REFERER' => 'https://ddwen.yunpusher.com/wap/vip.html'
+    'HTTP_COOKIE' => 'key=TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u; _csrf-frontend=e08373a03171bf4669eef67b5cc13c965c6bcf69ea19a4d6a59a867887a23f55a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22R702SHP1DPp83PKW7M8r6hiEuweGEinL%22%3B%7D'
+    'HTTP_HOST' => 'ddwen.yunpusher.com'
+    'HTTP_X_REAL_IP' => '220.165.208.127'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '50'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'https://ddwen.yunpusher.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Linux; Android 5.1.1; NX510J Build/LMY47V; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/57.0.2987.132 MQQBrowser/6.2 TBS/043808 Mobile Safari/537.36 MicroMessenger/6.6.1.1200(0x26060132) NetType/WIFI Language/zh_CN'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,en-US;q=0.8'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'ddwen.yunpusher.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '220.165.208.127'
+    'DOCUMENT_ROOT' => '/data/wwwroot/ddwen.yunpusher.com/web'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/data/wwwroot/ddwen.yunpusher.com/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => '/data/wwwroot/ddwen.yunpusher.com/web/api/index.php'
+    'REMOTE_PORT' => '10226'
+    'REDIRECT_URL' => '/api/v1/vip/buy'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/v1/vip/buy'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1517284065.904
+    'REQUEST_TIME' => 1517284065
+]
+2018-01-30 11:47:49 [220.165.208.127][11][-][error][Exception] Exception: [ORDERPAID]该订单已支付 in /data/wwwroot/ddwen.yunpusher.com/common/components/WxJsPay.php:51
+Stack trace:
+#0 /data/wwwroot/ddwen.yunpusher.com/api/modules/v1/controllers/VipController.php(39): common\components\WxJsPay->getPrepayId('owTbmv8TOAphSj9...', 'VIP\xE4\xBC\x9A\xE5\x91\x98\xE8\xB4\xAD\xE4\xB9\xB0', 'v', 490570627702463011, 1)
+#1 [internal function]: api\modules\v1\controllers\VipController->actionBuy()
+#2 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#3 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#4 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('buy', Array)
+#5 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('v1/vip/buy', Array)
+#6 /data/wwwroot/ddwen.yunpusher.com/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /data/wwwroot/ddwen.yunpusher.com/web/api/index.php(16): yii\base\Application->run()
+#8 {main}
+2018-01-30 11:47:49 [220.165.208.127][11][-][info][application] $_POST = [
+    'id' => '1'
+    'access_token' => 'TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u'
+]
+
+$_COOKIE = [
+    'key' => 'TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u'
+    '_csrf-frontend' => '9a0fedabd6f1def0e10ed792986e26933336bdb08f6f3cb59d7b804015b82efca:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"yFgK-PpBO1gJJKbOwWao-ScSokp_R6HF\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_HTTPS' => 'on'
+    'REDIRECT_STATUS' => '200'
+    'HTTPS' => 'on'
+    'HTTP_REFERER' => 'https://ddwen.yunpusher.com/wap/vip.html'
+    'HTTP_COOKIE' => 'key=TrOj-g2uk-EENidS2AxBPv9ylYDAiS0u; _csrf-frontend=9a0fedabd6f1def0e10ed792986e26933336bdb08f6f3cb59d7b804015b82efca%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22yFgK-PpBO1gJJKbOwWao-ScSokp_R6HF%22%3B%7D'
+    'HTTP_HOST' => 'ddwen.yunpusher.com'
+    'HTTP_X_REAL_IP' => '220.165.208.127'
+    'HTTP_CONNECTION' => 'close'
+    'CONTENT_LENGTH' => '50'
+    'HTTP_ACCEPT' => 'application/json, text/javascript, */*; q=0.01'
+    'HTTP_ORIGIN' => 'https://ddwen.yunpusher.com'
+    'HTTP_X_REQUESTED_WITH' => 'XMLHttpRequest'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 9_1 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1 wechatdevtools/1.01.1712150 MicroMessenger/6.5.7 Language/zh_CN webview/15172740267216578 webdebugger port/9974'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded; charset=UTF-8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin'
+    'LD_LIBRARY_PATH' => '/usr/local/apache/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'ddwen.yunpusher.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '220.165.208.127'
+    'DOCUMENT_ROOT' => '/data/wwwroot/ddwen.yunpusher.com/web'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/data/wwwroot/ddwen.yunpusher.com/web'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => '/data/wwwroot/ddwen.yunpusher.com/web/api/index.php'
+    'REMOTE_PORT' => '10230'
+    'REDIRECT_URL' => '/api/v1/vip/buy'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.0'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/v1/vip/buy'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1517284069.223
+    'REQUEST_TIME' => 1517284069
+]
+2018-03-11 16:31:04 [192.168.31.212][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "". in D:\www\git\yii2-ace\vendor\yiisoft\yii2\base\Module.php:537
+Stack trace:
+#0 D:\www\git\yii2-ace\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#1 D:\www\git\yii2-ace\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\www\git\yii2-ace\web\api\index.php(16): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: 页面未找到。 in D:\www\git\yii2-ace\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 D:\www\git\yii2-ace\vendor\yiisoft\yii2\base\Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\www\git\yii2-ace\web\api\index.php(16): yii\base\Application->run()
+#2 {main}
+2018-03-11 16:31:04 [192.168.31.212][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => 'eonplc2l6cvjav0nj535d3mav7'
+    '_csrf-frontend' => 'f0974ddc5cb60913e7ac99c9bfeb31b36e03f2b790985274f49c44bd940c5407a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"lrL3pgdjBO0TBwfAkVTTDTcDk-PTm96o\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'ace.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'advanced-frontend=eonplc2l6cvjav0nj535d3mav7; _csrf-frontend=f0974ddc5cb60913e7ac99c9bfeb31b36e03f2b790985274f49c44bd940c5407a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22lrL3pgdjBO0TBwfAkVTTDTcDk-PTm96o%22%3B%7D'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\php7\\;D:\\www\\phalcon-devtools\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win64) PHP/7.0.13'
+    'SERVER_NAME' => 'ace.com'
+    'SERVER_ADDR' => '192.168.31.212'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.31.212'
+    'DOCUMENT_ROOT' => 'D:/www/git/yii2-ace/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/www/git/yii2-ace/web'
+    'SERVER_ADMIN' => 'ace.com'
+    'SCRIPT_FILENAME' => 'D:/www/git/yii2-ace/web/api/index.php'
+    'REMOTE_PORT' => '56205'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/api/'
+    'SCRIPT_NAME' => '/api/index.php'
+    'PHP_SELF' => '/api/index.php'
+    'REQUEST_TIME_FLOAT' => 1520757064.004
+    'REQUEST_TIME' => 1520757064
+]
