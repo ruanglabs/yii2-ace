@@ -22,6 +22,7 @@ return [
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-backend',
+            'cookieValidationKey' => 'GPFOLBRl9-4XgsHKjWMDSmZ-3zSNlwZd',
             'csrfCookie' => [
                     'httpOnly' => true,
                     'path' => '/backend',

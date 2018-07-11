@@ -11,9 +11,9 @@ return [
         ],
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=127.0.0.1;dbname=aaa',
-            'username' => '1',
-            'password' => '1',
+            'dsn' => 'mysql:host=localhost;dbname=zjh',
+            'username' => 'mysql_local_zjh',
+            'password' => 'JFDJ3sa3g6dsdsg@dsd2dD',
             'charset' => 'utf8',
         ],
         'formatter' => [
